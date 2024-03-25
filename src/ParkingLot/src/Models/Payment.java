@@ -6,4 +6,8 @@ public class Payment {
     String time;
     int amount;
     String transactionID;
+
+    public Payment(String paymentMode){
+
+    }
 }
