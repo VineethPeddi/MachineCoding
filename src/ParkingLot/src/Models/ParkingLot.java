@@ -18,6 +18,7 @@ public class ParkingLot {
         this.allowedVechicles=allowedVechicles;
         this.allocationStrategy=allocationStrategy;
         this.feeCalculationStrategy=feeCalculationStrategy;
+<<<<<<< Updated upstream
     }
     public Vehicle registerVehicle(String ownerName,String vehicleNumber,VechicleType vehicleType) throws Exception{
         Vehicle vehicle= new Vehicle(vehicleType,ownerName,vehicleNumber);
@@ -27,5 +28,7 @@ public class ParkingLot {
 
     public List<Gate> getGates(){
         return gates;
+=======
+>>>>>>> Stashed changes
     }
 }
