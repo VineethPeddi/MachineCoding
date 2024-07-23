@@ -17,6 +17,15 @@ public class ParkingLot {
         this.gates=gates;
         this.allowedVechicles=allowedVechicles;
         this.allocationStrategy=allocationStrategy;
-        this.feeCalculationStrategy=feeCalculationStrategy
+        this.feeCalculationStrategy=feeCalculationStrategy;
+    }
+    public Vehicle registerVehicle(String ownerName,String vehicleNumber,VechicleType vehicleType) throws Exception{
+        Vehicle vehicle= new Vehicle(vehicleType,ownerName,vehicleNumber);
+        vehicle.allocateParking(allocationStrategy,floors);
+        return vehicle;
+    }
+
+    public List<Gate> getGates(){
+        return gates;
     }
 }
